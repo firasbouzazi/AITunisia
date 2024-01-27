@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Tunisian Summit Registration</title>
+    <style>
+        body {
+            font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+            background-image: url('imgs/BG_reg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #22282a;
+            border-radius: 5px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .container h2 {
+            font-size: 30px;
+            color: #fdf0d5;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .form-group input, .form-group select {
+            width: 50%;
+            padding: 3px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+			font-size: 14px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #ff274b;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #22282a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>AI Tunisian Summit Registration</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="university">University (if student)</label>
+                <input type="text" id="university" name="university">
+            </div>
+            <div class="form-group">
+                <label for="job">Job (if professional)</label>
+                <input type="text" id="job" name="job">
+            </div>
+            <div class="form-group">
+                <label for="experience">Years of Experience in AI</label>
+                <select id="experience" name="experience">
+                    <option value="0-1">0-1 year</option>
+                    <option value="1-3">1-3 years</option>
+                    <option value="3+">More than 3 years</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="interest">Main AI Interest</label>
+                <input type="text" id="interest" name="interest">
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
